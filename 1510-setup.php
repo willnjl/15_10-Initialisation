@@ -1,6 +1,6 @@
 <?php
    /**
-   * Plugin Name: 1510-setup
+   * Plugin Name: 15-10 Initialisation
    * Plugin URI: 
    * description:  A Plugin For managing user roles in 1510 recruitment sites
    * Version: 1.2
