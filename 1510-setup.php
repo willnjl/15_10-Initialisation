@@ -12,31 +12,18 @@
 
 // require_once(__DIR__ . "/ConsultantRole.php");
 // require_once(__DIR__ . "/Customization.php");
-require_once(__DIR__ . "/Capabilities.php");
+require_once(__DIR__ . "/XmlFeed.php");
+
+
 
 
 function fiften_setup_activate()
 {
-   $rolesToEdit = array(
-      'administrator', 'editor', 'author'
-   );
-   $capsToRemove = array(
-      'install_plugins', 'edit_plugins'
-   );
-   $editor = new FiftenCapEditor($rolesToEdit, $capsToRemove);
-   $editor->removeCapabilities();
-  
+
 }
 function fiften_setup_deactivate()
 {
-   $rolesToEdit = array(
-      'administrator', 'editor', 'author'
-   );
-   $capsToRemove = array(
-      'install_plugins', 'edit_plugins'
-   );
-   $editor = new FiftenCapEditor($rolesToEdit, $capsToRemove);
-   $editor->restoreCapabilities();
+
 }
 
 register_activation_hook( __FILE__, 'fiften_setup_activate' );
